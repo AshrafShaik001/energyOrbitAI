@@ -1,0 +1,33 @@
+
+──────────────────────────────────────────────────────────────────────
+  🔧 qDriver AI Healed a Locator
+──────────────────────────────────────────────────────────────────────
+  Element    : Username input on login page
+  Original   : [name='loginPage:j_id1:siteLog']
+  Healed     : #loginPage\:j_id1\:siteLogin\:loginComponent\:loginForm\:username
+  Confidence : high
+  Action     : Update your page object with the healed selector
+──────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────────────────────────────────────
+  🔧 qDriver AI Healed a Locator
+──────────────────────────────────────────────────────────────────────
+  Element    : Password input on login page
+  Original   : [name='loginPages']
+  Healed     : #loginPage\:j_id1\:siteLogin\:loginComponent\:loginForm\:password
+  Confidence : high
+  Action     : Update your page object with the healed selector
+──────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────────────────────────────────────
+  🔧 qDriver AI Healed a Locator
+──────────────────────────────────────────────────────────────────────
+  Element    : Login button
+  Original   : [name='logs']
+  Healed     : input[name='loginPage:j_id1:siteLogin:loginComponent:loginForm:loginButton']
+  Confidence : high
+  Action     : Update your page object with the healed selector
+──────────────────────────────────────────────────────────────────────
+

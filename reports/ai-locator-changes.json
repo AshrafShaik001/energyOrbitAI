@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-14T17:29:04.770Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Username input on login page",
+    "originalSelector": "[name='loginPage:j_id1:siteLogin:loginComponent:loginFom:username']",
+    "healedSelector": "#loginPage\\:j_id1\\:siteLogin\\:loginComponent\\:loginForm\\:username",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Element has a unique id 'loginPage:j_id1:siteLogin:loginComponent:loginForm:username' - the original selector had a typo 'loginFom' instead of 'loginForm'"
+  },
+  {
+    "timestamp": "2026-03-14T17:32:31.798Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Username input on login page",
+    "originalSelector": "[name='loginPage:j_id1:siteLog']",
+    "healedSelector": "#loginPage\\:j_id1\\:siteLogin\\:loginComponent\\:loginForm\\:username",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Element has a unique ID 'loginPage:j_id1:siteLogin:loginComponent:loginForm:username' with colons escaped for CSS selector"
+  },
+  {
+    "timestamp": "2026-03-14T17:32:39.299Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Password input on login page",
+    "originalSelector": "[name='loginPages']",
+    "healedSelector": "#loginPage\\:j_id1\\:siteLogin\\:loginComponent\\:loginForm\\:password",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "The password input has a specific id matching the label's for attribute 'loginPage:j_id1:siteLogin:loginComponent:loginForm:password', with colons escaped for CSS"
+  },
+  {
+    "timestamp": "2026-03-14T17:32:48.557Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Login button",
+    "originalSelector": "[name='logs']",
+    "healedSelector": "input[name='loginPage:j_id1:siteLogin:loginComponent:loginForm:loginButton']",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Using the full name attribute of the Login submit button which uniquely identifies it"
+  }
+]

@@ -1,0 +1,11 @@
+
+──────────────────────────────────────────────────────────────────────
+  🔧 qDriver AI Healed a Locator
+──────────────────────────────────────────────────────────────────────
+  Element    : Username input on login page
+  Original   : [name='loginPage:j_id1:siteLogin:loginComponent:loginFom:username']
+  Healed     : #loginPage\:j_id1\:siteLogin\:loginComponent\:loginForm\:username
+  Confidence : high
+  Action     : Update your page object with the healed selector
+──────────────────────────────────────────────────────────────────────
+
