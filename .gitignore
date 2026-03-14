@@ -7,3 +7,7 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 .env.qa
+qdriver-cache.json
+allure-results/
+allure-report/
+
