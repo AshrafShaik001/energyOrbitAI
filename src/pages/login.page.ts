@@ -1,26 +1,26 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Page } from "@playwright/test";
 import { BasePage } from "./base.page";
+import { Locator } from "@playwright/test";
 import { QDriverLocator } from "qdriver";
 
+type LocatorLike = Locator | QDriverLocator;
+
 export class LoginPage extends BasePage {
-  readonly userNameInput: QDriverLocator;
-  readonly passwordInput: QDriverLocator;
-  readonly loginButton: QDriverLocator;
+  readonly userNameInput: LocatorLike;
+  readonly passwordInput: LocatorLike;
+  readonly loginButton: LocatorLike;
 
   constructor(page: Page) {
     super(page);
-    this.userNameInput = this.qd.locator(
+    this.userNameInput = this.locator(
       "[name='loginPage:j_id1:siteLogin:loginComponent:loginForm:username']",
       "Username input on login page"
     );
-    this.passwordInput = this.qd.locator(
+    this.passwordInput = this.locator(
       "[name='loginPage:j_id1:siteLogin:loginComponent:loginForm:password']",
       "Password input on login page"
     );
-    this.loginButton = this.qd.locator(
+    this.loginButton = this.locator(
       "[name='loginPage:j_id1:siteLogin:loginComponent:loginForm:loginButton']",
       "Login button"
     );
@@ -37,7 +37,7 @@ export class LoginPage extends BasePage {
   }
 
   async signInWith(
-    email: string = process.env.USEREMAIL!,
+    email: string = process.env.EMAIL!,
     password: string = process.env.PASSWORD!,
   ) {
     await this.goto();

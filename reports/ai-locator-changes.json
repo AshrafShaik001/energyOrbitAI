@@ -38,5 +38,15 @@
     "status": "healed",
     "confidence": "high",
     "reason": "Using the full name attribute of the Login submit button which uniquely identifies it"
+  },
+  {
+    "timestamp": "2026-03-14T17:44:42.375Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Username input on login page",
+    "originalSelector": "[name='loginPage:j_id1:siteLoin:loginComponent:loginForm:username']",
+    "healedSelector": "#loginPage\\:j_id1\\:siteLogin\\:loginComponent\\:loginForm\\:username",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Element has a unique id attribute; colons escaped for CSS selector syntax"
   }
 ]

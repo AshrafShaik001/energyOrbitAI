@@ -87,7 +87,7 @@ Create `.env.qa`:
 
 ```env
 BASE_URL=https://qualitlabs.incontrol.zone/
-USEREMAIL=your_email_here
+EMAIL=your_email_here
 PASSWORD=your_password_here
 ```
 

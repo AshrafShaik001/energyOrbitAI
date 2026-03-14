@@ -19,5 +19,12 @@
     "helpingName": "Login button",
     "timestamp": "2026-03-14T17:32:48.557Z",
     "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin"
+  },
+  "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin::[name='loginPage:j_id1:siteLoin:loginComponent:loginForm:username']": {
+    "healedSelector": "#loginPage\\:j_id1\\:siteLogin\\:loginComponent\\:loginForm\\:username",
+    "originalSelector": "[name='loginPage:j_id1:siteLoin:loginComponent:loginForm:username']",
+    "helpingName": "Username input on login page",
+    "timestamp": "2026-03-14T17:44:42.374Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin"
   }
 }
