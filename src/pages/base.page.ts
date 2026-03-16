@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 import { Page } from "@playwright/test";
 import { UIActions } from "../helpers/uiActions.helper";
 import { QDriver } from "qdriver";
+import { QDriverLocator } from "qdriver";
+import { Locator } from "@playwright/test";
+
+type LocatorLike = Locator | QDriverLocator;
 
 export abstract class BasePage {
   protected readonly page: Page;
@@ -15,6 +15,13 @@ export abstract class BasePage {
     this.page = page;
     this.actions = new UIActions(page);
     this.qd = new QDriver(page);
+  }
+
+  protected locator(selector: string, description: string): LocatorLike {
+    if (process.env.ENABLE_QDRIVER === "true") {
+      return this.qd.locator(selector, description);
+    }
+    return this.page.locator(selector);
   }
 
   async navigate(url: string) {
