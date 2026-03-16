@@ -13,17 +13,18 @@ export class LoginPage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.userNameInput = this.locator(
-      "[name='loginPage:j_id1:steLogin:loginComponent:loginForm:username']",
+      "[id='loginPage:j_id1:siteLogin:loginComponent:loginForm:username']",
       "Username input on login page"
     );
     this.passwordInput = this.locator(
-      "[name='loginPage:j_id1:steLogin:loginComponent:loginForm:password']",
+      "[id='loginPage:j_id1:siteLogin:loginComponent:loginForm:password']",
       "Password input on login page"
     );
     this.loginButton = this.locator(
-      "[name='loginPage:j_id1:steLogin:loginComponent:loginForm:loginButton']",
+      "[id='loginPage:j_id1:siteLogin:loginComponent:loginForm:loginButton']",
       "Login button"
     );
+
   }
 
   async goto() {

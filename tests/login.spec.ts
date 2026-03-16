@@ -5,5 +5,4 @@ test("Valid Login", async ({ page }) => {
   const loginPage = new LoginPage(page);
 
   await loginPage.signInWith();
-  
 });

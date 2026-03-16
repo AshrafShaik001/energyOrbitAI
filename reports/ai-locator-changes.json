@@ -48,5 +48,44 @@
     "status": "healed",
     "confidence": "high",
     "reason": "Element has a unique id attribute; colons escaped for CSS selector syntax"
+  },
+  {
+    "timestamp": "2026-03-15T10:19:46.482Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Username input on login page",
+    "originalSelector": "[name='loginPage:loginComponent:loginForm:username']",
+    "healedSelector": "[id='loginPage:j_id1:siteLogin:loginComponent:loginForm:username']",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Exact id attribute match, unique on page"
+  },
+  {
+    "timestamp": "2026-03-15T10:20:07.365Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Password input on login page",
+    "originalSelector": "[name='loginPage:j_id1:steLogin:loComponent:loginForm:password']",
+    "healedSelector": "[id='loginPage:j_id1:siteLogin:loginComponent:loginForm:password']",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Exact id attribute match derived from the label's 'for' attribute pointing to the password input"
+  },
+  {
+    "timestamp": "2026-03-15T10:20:13.941Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__SiteLogin",
+    "helpingName": "Login button",
+    "originalSelector": "[name='loginPage:j_id1:steLogin:loComponent:loginForm:loginButton']",
+    "healedSelector": "[id='loginPage:j_id1:siteLogin:loginComponent:loginForm:loginButton']",
+    "status": "healed",
+    "confidence": "high",
+    "reason": "Exact id attribute match for the Login submit button, unique on page"
+  },
+  {
+    "timestamp": "2026-03-15T20:58:54.693Z",
+    "url": "https://eo3spring23patchorg.my.site.com/eo3__PortalRegistrationSelectionV2",
+    "helpingName": "Utility Customer without Account Number link on register page",
+    "originalSelector": "a[title='Utility Customer Without Account Number']",
+    "healedSelector": null,
+    "status": "failed",
+    "reason": "AI suggestion did not pass validation"
   }
 ]
